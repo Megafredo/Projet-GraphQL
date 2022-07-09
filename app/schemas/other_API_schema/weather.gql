@@ -1,0 +1,5 @@
+"Weather API" 
+type Weather {
+    # date: DateTime!,
+    LocalizedName: String
+}

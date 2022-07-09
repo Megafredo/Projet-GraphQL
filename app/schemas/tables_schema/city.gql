@@ -1,0 +1,14 @@
+"City"
+type City{
+
+    #& COLUMNS
+    id: Int!
+    name: String!
+    postal_code:String!
+    created_at: String!
+    updated_at: String
+    weather: Weather
+
+    #& RELATIONS (foreign key)
+    restaurants: [Restaurant]
+}

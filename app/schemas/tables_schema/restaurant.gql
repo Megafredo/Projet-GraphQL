@@ -1,0 +1,21 @@
+"Restaurant"
+type Restaurant {
+
+    #& COLUMNS
+    #& Le NOT NULL = ! à la fin du type
+    id: ID!
+    name: String!
+    description: String!
+    terrace: Boolean!
+    created_at: String!
+    updated_at: String
+
+    #& ---- Nos Relations ----
+    #& En cas de référence manager_id et city_id
+    #& 
+    manager: Manager!
+    city: City!
+    # https://stackoverflow.com/questions/49903229/many-to-many-relationship-in-graphql
+    cookingStyles: [CookingStyle!]
+
+}
